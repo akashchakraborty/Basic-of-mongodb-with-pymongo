@@ -124,7 +124,7 @@ if __name__ == "__main__":
     dl = delete_many_doc(collection,{'name':'Jhatu'}) # deletes the all documents with the particular name 
     print(dl.deleted_count) # gives the count of docs deleted
     
-    ## for more modifiers in finding, we can refer to: https://www.codewithharry.com/blogpost/mongodb-cheatsheet/
+    ## Running all the code at one is not the aim, comment each function call to see their working
 
 
     
