@@ -110,21 +110,21 @@ if __name__ == "__main__":
         print("Collection Connection/Creation Unsuccessful")
 
 
-    # insert_one_doc(dictionary,collection)
-    # insert_many_doc(students2,collection)
-    # onedoc = find_one_doc(collection,{'name':'akash'}) # Even if a particular name has 2 entries then also it will give 1 as it finds only 1
-    # print(onedoc)
-    # manydoc = find_many_doc(collection,{'name':'Malice','marks':80}) # find the doc in the collection of the db where name is malice and marks is 80
-    # manydoc2 = find_many_doc(collection,{'name':'akash'},{'name':1,'_id':0}) # finds the docs where name is malice and returns only the name and not anything else
-    # update_one_doc(collection,{'name':'Alice'},{'marks':2}) # updates the marks to 20 where name is Alice
-    # update_one_doc(collection,{'name':'Alice','location':'Surat'},{'marks':100}) # updates the marks to 20 where name is Alice and loc is surat
-    # up = update_many_doc(collection,{'name':'Alice'},{'location':'Mathura'}) # updates all location where name is alice
-    # print(up.modified_count) # gives the count as to how many docs have been modified
-    # delete_one_doc(collection,{'name':'Jhatu','location':'chutiyapur'}) # deletes the document with the particular name and location
+    insert_one_doc(dictionary,collection)
+    insert_many_doc(students2,collection)
+    onedoc = find_one_doc(collection,{'name':'akash'}) # Even if a particular name has 2 entries then also it will give 1 as it finds only 1
+    print(onedoc)
+    manydoc = find_many_doc(collection,{'name':'Malice','marks':80}) # find the doc in the collection of the db where name is malice and marks is 80
+    manydoc2 = find_many_doc(collection,{'name':'akash'},{'name':1,'_id':0}) # finds the docs where name is malice and returns only the name and not anything else
+    update_one_doc(collection,{'name':'Alice'},{'marks':2}) # updates the marks to 20 where name is Alice
+    update_one_doc(collection,{'name':'Alice','location':'Surat'},{'marks':100}) # updates the marks to 20 where name is Alice and loc is surat
+    up = update_many_doc(collection,{'name':'Alice'},{'location':'Mathura'}) # updates all location where name is alice
+    print(up.modified_count) # gives the count as to how many docs have been modified
+    delete_one_doc(collection,{'name':'Jhatu','location':'chutiyapur'}) # deletes the document with the particular name and location
     dl = delete_many_doc(collection,{'name':'Jhatu'}) # deletes the all documents with the particular name 
     print(dl.deleted_count) # gives the count of docs deleted
     
     ## for more modifiers in finding, we can refer to: https://www.codewithharry.com/blogpost/mongodb-cheatsheet/
-    
+
 
     
